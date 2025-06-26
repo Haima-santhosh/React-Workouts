@@ -87,3 +87,47 @@ ReactDOM.render(<App />, document.getElementById('root'));
 ✅ Use:
 * Development while building
 * Production when deploying
+
+
+
+## 🧠 JavaScript: `async` vs `defer` 
+
+### 🔸 1. Normal Script Tag (`<script src="...">`)
+
+* HTML is read line by line.
+* When it finds a `<script>` tag:
+
+  * It **pauses HTML parsing**.
+  * **Downloads and runs** the script.
+  * Then **continues HTML parsing** after script is done.
+
+---
+
+### 🔹 2. `async` Attribute (`<script async src="...">`)
+
+* Script is downloaded **in the background** (parallel to HTML).
+* When the script is ready:
+
+  * **HTML parsing pauses**.
+  * Script is **executed immediately**.
+* ⚠️ Useful for **independent scripts** (e.g., ads, analytics).
+
+
+
+### 🔸 3. `defer` Attribute (`<script defer src="...">`)
+
+* Script is also downloaded **in the background**.
+* BUT it **only runs after HTML is fully parsed**.
+* Keeps the **order** of scripts correct.
+* ✅ Best for scripts that **depend on the DOM**.
+
+### 🔁 Quick Comparison Table
+
+| Feature        | Normal `<script>` | `async`    | `defer`       |
+| -------------- | ----------------- | ---------- | ------------- |
+| HTML Parsing   | Blocked           | Continues  | Continues     |
+| Execution Time | Immediately       | When ready | After parsing |
+| Script Order   | Yes               | ❌ No order | ✅ Maintained  |
+
+
+
