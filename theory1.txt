@@ -1,0 +1,89 @@
+
+
+📘 React Essentials — Beginner Student Notes
+
+💡 1. What is Emmet?
+
+🔹 Emmet is a shortcut tool in code editors like VS Code.
+🔹 It helps you write HTML/CSS faster using short abbreviations.
+
+📝 Example:
+div.container>ul>li*3 ➡️ becomes:
+
+<div class="container">
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+
+------------------------------------------------------------
+
+🏗️ 2. Library vs Framework
+
+|                  | 📚 Library                 | 🧱 Framework                     |
+| ---------------- | -------------------------- | -------------------------------- |
+| 🔧 Who controls? | You control it             | It controls you                  |
+| 🎯 Flexibility   | More flexible              | More strict structure            |
+| 🧠 Example       | React                      | Angular                          |
+
+👉 Remember:
+Library = Your rules.
+Framework = Its rules.
+
+------------------------------------------------------------
+
+🌍 3. What is a CDN? Why use it?
+
+🌐 CDN = Content Delivery Network
+It loads files (scripts, images, etc.) from nearby servers.
+
+✅ Why use it?
+* ⚡ Faster website loading
+* 🧠 Less work for your server
+* 🔗 Easy to link tools like React
+
+------------------------------------------------------------
+
+⚛️ 4. Why is React called React?
+
+🔁 React is named because it reacts to changes.
+When data changes, it automatically updates the page.
+
+➡️ No manual DOM changes needed.
+
+------------------------------------------------------------
+
+🔐 5. What is `crossorigin` in a `<script>` tag?
+
+🌐 Tells browser how to load scripts from another site (cross-origin).
+
+✅ In React development, it helps show full error messages from CDN scripts.
+
+------------------------------------------------------------
+
+🧩 6. React vs ReactDOM
+
+| ⚛️ React                    | 🖥️ ReactDOM                        |
+| --------------------------- | ----------------------------------- |
+| Builds components (logic)   | Renders them to the browser (HTML) |
+| Used to create parts        | Used to show those parts           |
+
+📝 Example:
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
+------------------------------------------------------------
+
+⚙️ 7. Development vs Production React via CDN
+
+| 🔍 react.development.js     | 🚀 react.production.js            |
+| --------------------------- | --------------------------------- |
+| Used during learning        | Used when app is live             |
+| Shows full error messages   | No extra messages (faster)        |
+| Bigger file size            | Smaller & optimized               |
+
+✅ Use:
+* Development while building
+* Production when deploying
