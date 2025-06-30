@@ -1,0 +1,26 @@
+{
+  "name": "namaste-react-practices",
+  "version": "1.0.0",
+  "description": "This is Ract workouts by Haima Santhosh",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haima-santhosh/React-Workouts.git"
+  },
+  "keywords": [],
+  "author": "Haima Santhosh C",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haima-santhosh/React-Workouts/issues"
+  },
+  "homepage": "https://github.com/Haima-santhosh/React-Workouts#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
